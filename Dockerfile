@@ -1,5 +1,6 @@
 FROM php:8.1-fpm
 
+
 RUN docker-php-ext-install pdo pdo_mysql
 
 
@@ -46,8 +47,10 @@ RUN docker-php-ext-install \
     intl
 
 
+
 COPY ./src /var/www/html
 
+# RUN apk add shadow && usermod -u 1000 www-data && groupmod -g 1000 www-data 
 RUN chown -R www-data:www-data /var/www/html/storage
 
 

@@ -63,7 +63,7 @@ services:
 
   # Web Server Service
   nginx:
-    image: nginx:alpine
+    image: nginx:latest
     container_name: nginx
     ports:
       - 8000:80
