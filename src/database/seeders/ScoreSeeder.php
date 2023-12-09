@@ -12,6 +12,6 @@ class ScoreSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Score::factory(5)->create();
+        \App\Models\Score::factory(10)->create();
     }
 }

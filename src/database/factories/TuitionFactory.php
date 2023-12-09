@@ -17,7 +17,7 @@ class TuitionFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => rand(1,3),
+            'user_id' => rand(1,2),
             'semester' => rand(1,3),
             'description' => fake()->word(),
             'amount' => rand(100000, 1000000),

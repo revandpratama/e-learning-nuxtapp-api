@@ -12,6 +12,6 @@ class TuitionSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Tuition::factory(2)->create();
+        \App\Models\Tuition::factory(10)->create();
     }
 }

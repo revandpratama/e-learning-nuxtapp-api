@@ -32,10 +32,12 @@ class KRSFactory extends Factory
         return [
             // 'user_id' => User::inRandomOrder()->first()->id(),
             // 'subject_id' => Subject::inRandomOrder()->first()->id(),
-            'user_id' => rand(1, 3),
+            'user_id' => rand(1, 2),
             'subject_id' => rand(1, 5),
             'lecturer' => fake()->name(),
             'semester' => rand(1, 3),
+            'class' => rand(1, 10) . '-' . rand(1,5) . '-' . rand(1,9),
+            'schedule' => fake()->randomElement(['Monday', 'Tuesday', 'Wednesday'])
         ];
     }
 }

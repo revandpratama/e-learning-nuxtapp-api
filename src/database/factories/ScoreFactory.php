@@ -29,8 +29,8 @@ class ScoreFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => rand(1,3),
-            'krs_id' => rand(1,3),
+            'user_id' => rand(1,2),
+            'krs_id' => rand(1,10),
             'score' => rand(50, 100),
             'index' => 'A'
         ];

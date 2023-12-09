@@ -15,10 +15,12 @@ return new class extends Migration
     {
         Schema::create('krs', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class);
+            $table->foreignIdFor(User::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Subject::class);
             $table->string('lecturer');
             $table->integer('semester');
+            $table->string('class');
+            $table->string('schedule');
             $table->boolean('status')->default(false);
             $table->timestamps();
         });

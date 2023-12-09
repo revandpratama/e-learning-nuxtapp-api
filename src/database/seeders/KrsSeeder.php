@@ -12,6 +12,6 @@ class KRSSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Krs::factory(5)->create();
+        \App\Models\Krs::factory(10)->create();
     }
 }
