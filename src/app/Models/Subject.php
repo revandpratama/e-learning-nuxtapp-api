@@ -10,5 +10,8 @@ class Subject extends Model
     use HasFactory;
 
     protected $guarded = [];
-    
+
+    public function krs() {
+        return $this->hasMany(Krs::class);
+    }
 }
